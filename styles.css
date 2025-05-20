@@ -73,3 +73,50 @@ button:hover {
   color: red;
   margin-top: 20px;
 }
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+    margin: 0 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #weather-info {
+    margin-top: 15px;
+  }
+  
+  #city-name {
+    font-size: 18px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 320px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
