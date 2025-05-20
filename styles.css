@@ -11,9 +11,11 @@ body {
   background-color: #121212;
   color: #ffffff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px 0;
 }
 
 .container {
@@ -23,6 +25,7 @@ body {
   width: 400px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -74,12 +77,36 @@ button:hover {
   margin-top: 20px;
 }
 
+/* Footer styles */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  position: fixed;
+  bottom: 0;
+  background-color: #1a1a1a;
+  color: #aaaaaa;
+  font-size: 14px;
+  border-top: 1px solid #333333;
+}
+
+.footer a {
+  color: #9e66ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #6200ea;
+  text-decoration: underline;
+}
+
 /* Media Queries for Mobile Devices */
 @media (max-width: 480px) {
   .container {
     width: 90%;
     padding: 15px;
-    margin: 0 10px;
+    margin: 0 10px 60px 10px;
   }
 
   h1 {
@@ -103,9 +130,14 @@ button:hover {
   #weather-info {
     margin-top: 15px;
   }
-  
+
   #city-name {
     font-size: 18px;
+  }
+
+  .footer {
+    padding: 10px 0;
+    font-size: 12px;
   }
 }
 
